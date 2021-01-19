@@ -45,6 +45,10 @@
     width: 80rem;
     margin: auto;
   }
+  p.cart-items-loading{
+    padding-top: 10rem;;
+    text-align: center;
+  }
 </style>
 
 <Navbar
@@ -68,7 +72,7 @@
         <p slot="description">{product.description}</p>
       </Card>
       {:else}
-      <p>Loading...</p>
+      <p class="cart-items-loading">Loading...</p>
     {/each}
   </section>
 {/if}
