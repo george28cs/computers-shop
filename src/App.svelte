@@ -67,6 +67,8 @@
         productImage={product.image}>
         <p slot="description">{product.description}</p>
       </Card>
+      {:else}
+      <p>Loading...</p>
     {/each}
   </section>
 {/if}
